@@ -2,6 +2,7 @@ package utils;
 
 import java.util.Scanner;
 
+//some utilities methods for managing text input
 public class TextUtils {
     private static Scanner sc = new Scanner(System.in);
 
