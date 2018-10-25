@@ -1,2 +1,2 @@
 # BlackJack-Game
-A simple BlackJack console game.
+A simple BlackJack Java console game.
