@@ -210,6 +210,7 @@ public class BlackJackMain {
             TextUtils.printMessage("Dealer stands.");
         else
             TextUtils.printMessage("Dealer busts.");
+
     }
 
     //checks all possible results and assigns the result to result
@@ -228,7 +229,7 @@ public class BlackJackMain {
                 && playerHand.getHandValue() <= 21) result = GameResult.PLAYER_WINS;
 
         //dealer loses if it busts
-        if (dealerHand.getHandValue() > 21 && playerHand.getHandValue() < 21) result = GameResult.PLAYER_WINS;
+        if (dealerHand.getHandValue() > 21 && playerHand.getHandValue() <= 21) result = GameResult.PLAYER_WINS;
 
         //tie if both hands have the same value
         if (dealerHand.getHandValue() == playerHand.getHandValue())
