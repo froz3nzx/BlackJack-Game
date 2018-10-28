@@ -248,7 +248,7 @@ public class BlackJackMain {
                 break;
             case PLAYER_WINS:
                 TextUtils.printMessage("You win " + betAmount + "$");
-                player.gainCash(betAmount * 2);
+                player.gainCash(betAmount*2);
                 break;
             case PLAYER_BLACKJACK:
                 TextUtils.printMessage("BlackJack! You win " + betAmount * 1.25 + "$s");
@@ -264,7 +264,6 @@ public class BlackJackMain {
 
         dealerHand.clearHand();
         playerHand.clearHand();
-        isFirstTurn = false;
     }
 
     //this method shows only the first card of dealer's hand
