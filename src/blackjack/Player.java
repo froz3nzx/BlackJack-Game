@@ -25,7 +25,7 @@ public class Player {
     }
 
     public void gainCash(double amount) {
-        this.cash = amount;
+        this.cash += amount;
     }
 
     @Override
